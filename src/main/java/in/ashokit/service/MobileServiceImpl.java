@@ -22,7 +22,8 @@ public class MobileServiceImpl implements MobileService {
 	@Override
 	public List<Mobile> getAllMobiles() {
 
-		return repo.findAll().stream().sorted(Comparator.comparing(Mobile::getPrice)).collect(Collectors.toList());
+		return repo.findAll().stream().sorted(Comparator.comparing(Mobile::getPrice).reversed())
+				.collect(Collectors.toList());
 	}
 
 	@Override
@@ -56,17 +57,14 @@ public class MobileServiceImpl implements MobileService {
 		}
 
 		if (brandName && ramSize) {
-			System.out.println("brandName && ramSize");
-			return repo.findAll().stream().filter(mob -> mob.getBrand().equals(brand) && mob.getRam().equals(ram))
-					.sorted(Comparator.comparing(Mobile::getRam).reversed()).collect(Collectors.toList());
+			return repo.findByBrandAndRam(brand, ram).stream().sorted(Comparator.comparing(Mobile::getRam).reversed())
+					.collect(Collectors.toList());
 		} else if (brandName && priceAmt) {
-			System.out.println("brandName && priceAmt");
-			return repo.findAll().stream().filter(mob -> mob.getBrand().equals(brand) && mob.getPrice() <= price)
+			return repo.getByBrandAndPrice(brand, price).stream()
 					.sorted(Comparator.comparing(Mobile::getPrice).reversed()).collect(Collectors.toList());
 		} else if (ramSize && priceAmt) {
-			System.out.println("ramSize && priceAmt");
-			return repo.findAll().stream().filter(mob -> mob.getRam().equals(ram) && mob.getPrice() <= price)
-					.sorted(Comparator.comparing(Mobile::getPrice).reversed()).collect(Collectors.toList());
+			return repo.getByRamAndPrice(ram, price).stream().sorted(Comparator.comparing(Mobile::getPrice).reversed())
+					.collect(Collectors.toList());
 		} else {
 			return new ArrayList<>();
 		}
