@@ -2,6 +2,7 @@ package in.ashokit.service;
 
 import java.util.List;
 
+import in.ashokit.bindings.Category;
 import in.ashokit.entity.Mobile;
 
 public interface MobileService {
@@ -10,8 +11,6 @@ public interface MobileService {
 
 	List<String> getAllBrandName();
 
-	List<Mobile> getMobilesByCategory(String brand, String ram, Double price);
-
-	List<Mobile> getMobilesByCat(String brand, String ram, Double price);
+	List<Mobile> getMobilesByCategory(Category category);
 
 }

@@ -3,10 +3,12 @@ package in.ashokit.rest;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import in.ashokit.bindings.Category;
 import in.ashokit.entity.Mobile;
 import in.ashokit.service.MobileService;
 
@@ -34,17 +36,9 @@ public class MobileResource {
 
 	}
 
-	@GetMapping("/")
-	public List<Mobile> mobileByCategory(@RequestParam(required = false) String brand,
-			@RequestParam(required = false) String ram, @RequestParam(required = false) Double price) {
-
-		if (brand != null && ram != null && price != null) {
-			return service.getMobilesByCategory(brand, ram, price);
-
-		} else {
-			return service.getMobilesByCat(brand, ram, price);
-
-		}
+	@PostMapping("/category")
+	public List<Mobile> mobileByCategory(@RequestBody Category category) {
+		return service.getMobilesByCategory(category);
 
 	}
 

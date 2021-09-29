@@ -1,12 +1,13 @@
 package in.ashokit.service;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
+import in.ashokit.bindings.Category;
 import in.ashokit.entity.Mobile;
 import in.ashokit.repo.MobileRepository;
 
@@ -33,41 +34,26 @@ public class MobileServiceImpl implements MobileService {
 	}
 
 	@Override
-	public List<Mobile> getMobilesByCategory(String brand, String ram, Double price) {
+	public List<Mobile> getMobilesByCategory(Category category) {
 
-		return repo.findAll().stream()
-				.filter(mob -> mob.getBrand().equals(brand) && mob.getRam().equals(ram) && mob.getPrice() <= price)
-				.sorted(Comparator.comparing(Mobile::getPrice).reversed()).collect(Collectors.toList());
-	}
-
-	@Override
-	public List<Mobile> getMobilesByCat(String brand, String ram, Double price) {
-
-		boolean brandName = false;
-		boolean ramSize = false;
-		boolean priceAmt = false;
-		if (brand != null) {
-			brandName = true;
-		}
-		if (ram != null) {
-			ramSize = true;
-		}
-		if (price != null) {
-			priceAmt = true;
+		if (category == null) {
+			return repo.findAll();
 		}
 
-		if (brandName && ramSize) {
-			return repo.findByBrandAndRam(brand, ram).stream().sorted(Comparator.comparing(Mobile::getRam).reversed())
-					.collect(Collectors.toList());
-		} else if (brandName && priceAmt) {
-			return repo.getByBrandAndPrice(brand, price).stream()
-					.sorted(Comparator.comparing(Mobile::getPrice).reversed()).collect(Collectors.toList());
-		} else if (ramSize && priceAmt) {
-			return repo.getByRamAndPrice(ram, price).stream().sorted(Comparator.comparing(Mobile::getPrice).reversed())
-					.collect(Collectors.toList());
-		} else {
-			return new ArrayList<>();
+		Mobile mobile = new Mobile();
+
+		if (null != category.getBrand() && !"".equals(category.getBrand())) {
+			mobile.setBrand(category.getBrand());
 		}
+		if (null != category.getRam() && !"".equals(category.getRam())) {
+			mobile.setRam(category.getRam());
+		}
+		Example<Mobile> example = Example.of(mobile);
+		List<Mobile> mobiles = repo.findAll(example);
+		if (null != category.getPrice()) {
+			return mobiles.stream().filter(m -> m.getPrice() <= category.getPrice()).collect(Collectors.toList());
+		}
+		return mobiles;
 	}
 
 }
