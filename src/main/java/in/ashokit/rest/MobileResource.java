@@ -40,7 +40,7 @@ public class MobileResource {
 
 	}
 
-	@PostMapping(value = "/category", consumes = "application/json", produces = "application/xml")
+	@PostMapping(value = "/category", consumes = "application/json", produces = "application/json")
 	public List<Mobile> mobileByCategory(@RequestBody Category category) {
 		log.info("Category: " + category);
 		List<Mobile> mobilesByCategory = service.getMobilesByCategory(category);
