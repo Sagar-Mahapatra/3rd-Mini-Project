@@ -1,0 +1,13 @@
+server:
+  port: 9494
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: mysql20apr2021
+    url: jdbc:mysql://localhost:3306/3rd_MINI_PROJECT_ASHOKSIR
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
