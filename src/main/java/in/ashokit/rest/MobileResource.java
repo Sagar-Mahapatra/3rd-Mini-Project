@@ -2,8 +2,6 @@ package in.ashokit.rest;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +17,6 @@ import in.ashokit.service.MobileService;
 @RestController
 @RequestMapping("/mobile")
 public class MobileResource {
-
-	private static Logger log = LoggerFactory.getLogger(MobileResource.class);
 
 	private MobileService service;
 
@@ -45,11 +41,7 @@ public class MobileResource {
 	@PostMapping(value = "/category", consumes = { "application/json", "application/xml" }, produces = {
 			"application/json", "application/xml" })
 	public ResponseEntity<List<Mobile>> mobileByCategory(@RequestBody Category category) {
-
-		log.info("Category: " + category);
 		List<Mobile> list = service.getMobilesByCategory(category);
-		log.info("mobilesByCategory:: " + list);
-
 		return new ResponseEntity<List<Mobile>>(list, HttpStatus.FOUND);
 
 	}
