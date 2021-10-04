@@ -80,3 +80,7 @@
 10:04 12:58:13.014 [http-nio-9494-exec-1] [WARN] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.ArrayList] with preset Content-Type 'null']
 10:04 12:58:13.022 [http-nio-9494-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
 10:04 12:58:19.122 [http-nio-9494-exec-2] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:04 13:00:07.365 [RMI TCP Connection(107)-127.0.0.1] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] - Application shutdown requested.
+10:04 13:00:07.799 [RMI TCP Connection(107)-127.0.0.1] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:04 13:00:07.801 [RMI TCP Connection(107)-127.0.0.1] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-24 - Shutdown initiated...
+10:04 13:00:07.810 [RMI TCP Connection(107)-127.0.0.1] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-24 - Shutdown completed.
