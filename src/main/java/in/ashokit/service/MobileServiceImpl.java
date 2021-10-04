@@ -52,6 +52,7 @@ public class MobileServiceImpl implements MobileService {
 		List<Mobile> mobiles = repo.findAll(example);
 		if (null != category.getPrice()) {
 			return mobiles.stream().filter(m -> m.getPrice() <= category.getPrice()).collect(Collectors.toList());
+
 		}
 		return mobiles;
 	}
