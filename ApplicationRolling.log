@@ -47,3 +47,36 @@
 10:04 12:50:43.524 [restartedMain] [INFO] [s.d.s.w.s.ApiListingReferenceScanner] - Scanning for api listing references
 10:04 12:50:43.556 [restartedMain] [INFO] [in.ashokit.Application] - Started Application in 2.382 seconds (JVM running for 5617.935)
 10:04 12:50:43.558 [restartedMain] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+10:04 12:55:36.730 [Thread-101] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:04 12:55:36.731 [Thread-101] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-23 - Shutdown initiated...
+10:04 12:55:36.749 [Thread-101] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-23 - Shutdown completed.
+10:04 12:55:39.966 [restartedMain] [INFO] [in.ashokit.Application] - Starting Application using Java 1.8.0_291 on LAPTOP-O6PJ80RM with PID 1276 (C:\Users\SAGAR\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\3rd_Mini_Project\target\classes started by SAGAR in C:\Users\SAGAR\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\3rd_Mini_Project)
+10:04 12:55:39.967 [restartedMain] [INFO] [in.ashokit.Application] - No active profile set, falling back to default profiles: default
+10:04 12:55:40.558 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:04 12:55:40.585 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+10:04 12:55:40.758 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9494 (http)
+10:04 12:55:40.759 [restartedMain] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+10:04 12:55:40.759 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.53]
+10:04 12:55:40.787 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat-2].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+10:04 12:55:40.787 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 815 ms
+10:04 12:55:40.857 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:04 12:55:40.866 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-24 - Starting...
+10:04 12:55:40.900 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-24 - Start completed.
+10:04 12:55:40.901 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:04 12:55:40.963 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:04 12:55:40.963 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:04 12:55:41.258 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:04 12:55:41.395 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+10:04 12:55:41.504 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9494 (http) with context path ''
+10:04 12:55:41.505 [restartedMain] [INFO] [s.d.s.w.p.DocumentationPluginsBootstrapper] - Context refreshed
+10:04 12:55:41.506 [restartedMain] [INFO] [s.d.s.w.p.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+10:04 12:55:41.512 [restartedMain] [INFO] [s.d.s.w.s.ApiListingReferenceScanner] - Scanning for api listing references
+10:04 12:55:41.543 [restartedMain] [INFO] [in.ashokit.Application] - Started Application in 1.659 seconds (JVM running for 5915.922)
+10:04 12:55:41.547 [restartedMain] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+10:04 12:58:12.974 [http-nio-9494-exec-1] [INFO] [o.a.c.c.C.[Tomcat-2].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:04 12:58:12.975 [http-nio-9494-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+10:04 12:58:12.977 [http-nio-9494-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+10:04 12:58:12.982 [http-nio-9494-exec-1] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:04 12:58:13.014 [http-nio-9494-exec-1] [WARN] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.ArrayList] with preset Content-Type 'null']
+10:04 12:58:13.022 [http-nio-9494-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+10:04 12:58:19.122 [http-nio-9494-exec-2] [INFO] [i.a.a.MobileRestControllerAspect] - begin
