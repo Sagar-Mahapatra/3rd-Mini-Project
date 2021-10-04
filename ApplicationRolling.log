@@ -1,0 +1,26 @@
+10:04 12:49:30.127 [restartedMain] [INFO] [in.ashokit.Application] - Starting Application using Java 1.8.0_291 on LAPTOP-O6PJ80RM with PID 1276 (C:\Users\SAGAR\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\3rd_Mini_Project\target\classes started by SAGAR in C:\Users\SAGAR\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\3rd_Mini_Project)
+10:04 12:49:30.128 [restartedMain] [INFO] [in.ashokit.Application] - No active profile set, falling back to default profiles: default
+10:04 12:49:30.834 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:04 12:49:30.892 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+10:04 12:49:31.213 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9494 (http)
+10:04 12:49:31.214 [restartedMain] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+10:04 12:49:31.214 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.53]
+10:04 12:49:31.247 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat-1].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+10:04 12:49:31.248 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1113 ms
+10:04 12:49:31.329 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:04 12:49:31.337 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-22 - Starting...
+10:04 12:49:31.370 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-22 - Start completed.
+10:04 12:49:31.371 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:04 12:49:31.436 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:04 12:49:31.437 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:04 12:49:31.834 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:04 12:49:31.991 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+10:04 12:49:32.127 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9494 (http) with context path ''
+10:04 12:49:32.128 [restartedMain] [INFO] [s.d.s.w.p.DocumentationPluginsBootstrapper] - Context refreshed
+10:04 12:49:32.129 [restartedMain] [INFO] [s.d.s.w.p.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+10:04 12:49:32.134 [restartedMain] [INFO] [s.d.s.w.s.ApiListingReferenceScanner] - Scanning for api listing references
+10:04 12:49:32.169 [restartedMain] [INFO] [in.ashokit.Application] - Started Application in 2.23 seconds (JVM running for 5546.548)
+10:04 12:49:32.172 [restartedMain] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+10:04 12:50:40.821 [Thread-95] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:04 12:50:40.823 [Thread-95] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-22 - Shutdown initiated...
+10:04 12:50:40.834 [Thread-95] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-22 - Shutdown completed.

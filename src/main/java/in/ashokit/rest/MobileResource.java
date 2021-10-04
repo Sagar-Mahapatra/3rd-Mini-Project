@@ -26,16 +26,12 @@ public class MobileResource {
 
 	@GetMapping("/all")
 	public List<Mobile> allMobiles() {
-
 		return service.getAllMobiles();
-
 	}
 
 	@GetMapping("/brands")
 	public List<String> allBrands() {
-
 		return service.getAllBrandName();
-
 	}
 
 	@PostMapping(value = "/category", consumes = { "application/json", "application/xml" }, produces = {
@@ -43,7 +39,6 @@ public class MobileResource {
 	public ResponseEntity<List<Mobile>> mobileByCategory(@RequestBody Category category) {
 		List<Mobile> list = service.getMobilesByCategory(category);
 		return new ResponseEntity<List<Mobile>>(list, HttpStatus.FOUND);
-
 	}
 
 }
