@@ -10,7 +10,7 @@
 	</appender>
 	<appender name="RollingAppender"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>C:/Users/SAGAR/Documents/workspace-spring-tool-suite-4-4.10.0.RELEASE/3rd_Mini_Project/ApplicationRolling.log
+		<file>C:/Users/SAGAR/Documents/workspace-spring-tool-suite-4-4.10.0.RELEASE/3rd_Mini_Project/AppLogs.log
 		</file>
 		<encoder
 			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -19,7 +19,7 @@
 		</encoder>
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>C:/Users/SAGAR/Documents/workspace-spring-tool-suite-4-4.10.0.RELEASE/3rd_Mini_Project/ApplicationRolling_%d{dd-MM-yyyy}.log
+			<fileNamePattern>C:/Users/SAGAR/Documents/workspace-spring-tool-suite-4-4.10.0.RELEASE/3rd_Mini_Project/AppLogs_%d{dd-MM-yyyy}.log
 			</fileNamePattern>
 			<maxHistory>10</maxHistory>
 			<totalSizeCap>10KB</totalSizeCap>
