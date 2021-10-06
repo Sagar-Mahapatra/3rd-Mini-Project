@@ -54,3 +54,7 @@
 10:05 12:09:58.814 [restartedMain] [INFO] [s.d.s.w.s.ApiListingReferenceScanner] - Scanning for api listing references
 10:05 12:09:58.845 [restartedMain] [INFO] [in.ashokit.Application] - Started Application in 1.448 seconds (JVM running for 864.758)
 10:05 12:09:58.849 [restartedMain] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+10:05 12:22:14.051 [RMI TCP Connection(2)-127.0.0.1] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] - Application shutdown requested.
+10:05 12:22:14.271 [RMI TCP Connection(2)-127.0.0.1] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:05 12:22:14.272 [RMI TCP Connection(2)-127.0.0.1] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+10:05 12:22:14.281 [RMI TCP Connection(2)-127.0.0.1] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
