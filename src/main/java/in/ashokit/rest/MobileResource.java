@@ -25,8 +25,9 @@ public class MobileResource {
 	}
 
 	@GetMapping("/all")
-	public List<Mobile> allMobiles() {
-		return service.getAllMobiles();
+	public ResponseEntity<List<Mobile>> allMobiles() {
+		List<Mobile> list = service.getAllMobiles();
+		return new ResponseEntity<>(list, HttpStatus.FOUND);
 	}
 
 	@GetMapping("/brands")
