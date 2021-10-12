@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import in.ashokit.service.MobileService;
 
 @RestController
 @RequestMapping("/mobile")
+@CrossOrigin(origins = "http://localhost:4200")
 public class MobileResource {
 
 	private MobileService service;
@@ -24,10 +26,17 @@ public class MobileResource {
 		this.service = service;
 	}
 
-	@GetMapping("/all")
+	@GetMapping(value = "/all", produces = "appication/json")
 	public ResponseEntity<List<Mobile>> allMobiles() {
 		List<Mobile> list = service.getAllMobiles();
 		return new ResponseEntity<>(list, HttpStatus.FOUND);
+	}
+
+//just for testing front end call from angular app
+	@GetMapping(value = "/msg", produces = "appication/json")
+	public ResponseEntity<String> getMsg() {
+		return new ResponseEntity<String>("msg from rest api", HttpStatus.OK);
+
 	}
 
 	@GetMapping("/brands")
