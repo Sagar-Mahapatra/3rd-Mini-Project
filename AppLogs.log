@@ -86,3 +86,15 @@
 10:12 11:39:28.253 [restartedMain] [INFO] [s.d.s.w.s.ApiListingReferenceScanner] - Scanning for api listing references
 10:12 11:39:28.294 [restartedMain] [INFO] [in.ashokit.Application] - Started Application in 1.618 seconds (JVM running for 179.164)
 10:12 11:39:28.297 [restartedMain] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+10:12 11:53:12.630 [http-nio-9494-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:12 11:53:12.631 [http-nio-9494-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+10:12 11:53:12.633 [http-nio-9494-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+10:12 11:53:12.637 [http-nio-9494-exec-1] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:12 11:54:22.663 [http-nio-9494-exec-3] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:12 11:55:11.348 [http-nio-9494-exec-4] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:12 11:56:52.476 [http-nio-9494-exec-6] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:12 11:57:07.396 [http-nio-9494-exec-7] [INFO] [i.a.a.MobileRestControllerAspect] - begin
+10:12 11:58:12.237 [RMI TCP Connection(25)-127.0.0.1] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] - Application shutdown requested.
+10:12 11:58:12.637 [RMI TCP Connection(25)-127.0.0.1] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:12 11:58:12.638 [RMI TCP Connection(25)-127.0.0.1] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+10:12 11:58:12.653 [RMI TCP Connection(25)-127.0.0.1] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
