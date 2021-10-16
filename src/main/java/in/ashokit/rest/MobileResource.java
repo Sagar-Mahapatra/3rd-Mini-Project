@@ -26,7 +26,7 @@ public class MobileResource {
 		this.service = service;
 	}
 
-	@GetMapping(value = "/all", produces = "appication/json")
+	@GetMapping(value = "/all", produces = "appication/json", consumes = "appication/json")
 	public ResponseEntity<List<Mobile>> allMobiles() {
 		List<Mobile> list = service.getAllMobiles();
 		return new ResponseEntity<>(list, HttpStatus.FOUND);
