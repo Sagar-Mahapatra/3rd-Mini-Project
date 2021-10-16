@@ -33,7 +33,7 @@ public class MobileResource {
 	}
 
 //just for testing front end call from angular app
-	@GetMapping(value = "/msg", produces = "appication/json")
+	@GetMapping(value = "/msg", produces = "appication/json", consumes = "appication/json")
 	public ResponseEntity<String> getMsg() {
 		return new ResponseEntity<String>("msg from rest api", HttpStatus.OK);
 

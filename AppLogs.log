@@ -58,3 +58,32 @@
 10:16 07:45:22.376 [Thread-8] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 10:16 07:45:22.377 [Thread-8] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
 10:16 07:45:22.389 [Thread-8] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+10:16 07:45:22.666 [restartedMain] [INFO] [in.ashokit.Application] - Starting Application using Java 1.8.0_291 on LAPTOP-O6PJ80RM with PID 25660 (C:\Users\SAGAR\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\3rd_Mini_Project\target\classes started by SAGAR in C:\Users\SAGAR\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\3rd_Mini_Project)
+10:16 07:45:22.667 [restartedMain] [INFO] [in.ashokit.Application] - No active profile set, falling back to default profiles: default
+10:16 07:45:23.259 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:16 07:45:23.289 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+10:16 07:45:23.508 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9494 (http)
+10:16 07:45:23.509 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-9494"]
+10:16 07:45:23.509 [restartedMain] [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+10:16 07:45:23.510 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.53]
+10:16 07:45:23.535 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+10:16 07:45:23.535 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 862 ms
+10:16 07:45:23.601 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:16 07:45:23.609 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+10:16 07:45:23.643 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+10:16 07:45:23.644 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:16 07:45:23.689 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:16 07:45:23.690 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:16 07:45:23.994 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:16 07:45:24.166 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+10:16 07:45:24.282 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-9494"]
+10:16 07:45:24.286 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9494 (http) with context path ''
+10:16 07:45:24.287 [restartedMain] [INFO] [s.d.s.w.p.DocumentationPluginsBootstrapper] - Context refreshed
+10:16 07:45:24.289 [restartedMain] [INFO] [s.d.s.w.p.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+10:16 07:45:24.294 [restartedMain] [INFO] [s.d.s.w.s.ApiListingReferenceScanner] - Scanning for api listing references
+10:16 07:45:24.332 [restartedMain] [INFO] [in.ashokit.Application] - Started Application in 1.732 seconds (JVM running for 2599.062)
+10:16 07:45:24.335 [restartedMain] [INFO] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+10:16 08:35:11.277 [HikariPool-3 housekeeper] [WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=46m17s517ms358µs900ns).
+10:16 08:54:41.775 [Thread-12] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:16 08:54:41.777 [Thread-12] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+10:16 08:54:41.789 [Thread-12] [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
